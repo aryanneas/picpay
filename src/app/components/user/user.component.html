@@ -1,0 +1,15 @@
+<div class="user-content-wrapper">
+  <div>
+    <img class="user-image" src="{{ user.img }}" />
+  </div>
+  <div class="info-wrapper" style="margin-left: 5%">
+    <p class="user-name">Nome: {{ user.name }}</p>
+    <p class="user-id-username">ID: {{ user.id }} | {{ user.username }}</p>
+  </div>
+</div>
+
+<div>
+  <button type="button" class="pay-button" (click)="pay(user.id, user.name)">
+    Pagar
+  </button>
+</div>

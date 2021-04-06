@@ -1,0 +1,41 @@
+<div class="modal-backdrop">
+  <div class="modal-header-content">
+    <span class="close-modal"></span>
+
+    <p class="title">Pagamento para</p>
+    <b>{{ UserData.name }}</b>
+  </div>
+
+  <div class="content">
+    <form [formGroup]="paymentForm">
+      <label for="name"> Valor: </label>
+      <input
+        type="text"
+        mask="separator.0"
+        thousandSeparator="."
+        prefix="R$"
+        formControlName="amount"
+      />
+
+      <label for="name"> Selecione um cartão: </label>
+      <div class="cards">
+        <select formControlName="card">
+          <option [value]="card.id" *ngFor="let card of cards">
+            {{ card.card_number }}
+          </option>
+        </select>
+      </div>
+
+      <div class="payment-button-wrapper">
+        <button
+          type="submit"
+          [disabled]="!paymentForm.valid"
+          class="pay-button"
+          (click)="savePaymentData()"
+        >
+          Pagar
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

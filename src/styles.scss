@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.pay-button {
+  background: #11c76f;
+  border-radius: 40px;
+  color: #fff;
+  width: 200px;
+  display: inline-block;
+  line-height: 40px;
+  padding: 2px 1 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.25s ease-in;
+  max-width: 154px;
+  text-align: center;
+  border: none;
+  &:hover {
+    background-color: #0d9855;
+  }
+}
+
+label {
+  display: block;
+  margin-top: 10%;
+}
+
+select {
+  width: 100%;
+}

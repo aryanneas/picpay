@@ -1,0 +1,28 @@
+.user {
+  background-color: #fff;
+  color: #3d4451;
+  padding: 20px 40px;
+  border: 1px solid #11c770;
+  border-radius: 25px;
+  margin-bottom: 2%;
+}
+
+.user-app {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-wrapper {
+  margin-left: 15px;
+}
+
+.picpay-logo {
+  width: 15%;
+  padding-bottom: 0.5%;
+  display: flex;
+  margin: auto;
+}
+.picpay-logo-wrapper {
+  background-color: #eff0e8;
+}
